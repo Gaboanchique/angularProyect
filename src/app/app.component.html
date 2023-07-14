@@ -1,2 +1,4 @@
-<app-componentes></app-componentes>
-<app-binding></app-binding>
+<app-clases *ngIf="mostrarClase"></app-clases>
+<app-tienda *ngIf="!mostrarClase"></app-tienda>
+<button class="btn btn-primary boton-pagina" *ngIf="!mostrarClase" (click)="mostrarClase = !mostrarClase">i</button>
+<button class="btn btn-info boton-pagina" *ngIf="mostrarClase" (click)="mostrarClase = !mostrarClase">x</button>

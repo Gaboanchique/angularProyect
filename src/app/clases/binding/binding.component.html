@@ -1,27 +1,77 @@
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Binding</h1>
-        </div>
-        <div  class="col-12"> <p>son una herramienta de angular que nos permite hacer enlaces en nuestras plantillas
-            (html) y nuestro ts existen 4 tipos de binding</p>
-            <ul>
-                <li>interpolacion</li>
-                <li>property binding</li>
-                <li>even binding</li>
-                <li>tow-way binding</li>
-            </ul>
-        </div>
-        <div class="col-6"><h1>interpolacion</h1><br><p></p> la interpolacion es un mecanismo para poder sustituir una expresion
-            por un valor y nos apoyaremos de las dobles llaves </div>
-            <div class="col-6"><h6>ejemplo</h6><br><p></p>{{ retornamensaje()}}</div>
-            <div class="col-6"><h1>property binding</h1><br><p></p>Es el mecanismo de angular para definir o enlazar 
-                propiedades del htlm desde uestro codigo logico (ts)</div>
-                <div class="col-6"><h6>ejemplo</h6><ul>
-                    <li>
-                        <input type="text" [disabled]=" unaVariablePropearty">
-                    </li>
-                    <li><img [src] = "unaImagen" [style.width.px]="100"></li>
-                </ul></div>
+  <div class="row">
+    <div class="col-12">
+      <h1>Binding</h1>
     </div>
+    <div class="col-12">
+      <p>
+        son una herramienta de angular que nos permite hacer enlaces en nuestras
+        plantillas (html) y nuestro ts existen 4 tipos de binding
+      </p>
+      <ul>
+        <li>interpolacion</li>
+        <li>property binding</li>
+        <li>even binding</li>
+        <li>tow-way binding</li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h1>interpolacion</h1>
+      <br />
+      <p></p>
+      la interpolacion es un mecanismo para poder sustituir una expresion por un
+      valor y nos apoyaremos de las dobles llaves
+    </div>
+    <div class="col-6">
+      <h6>ejemplo</h6>
+      <br />
+      <p></p>
+      {{ retornamensaje() }}
+    </div>
+    <div class="col-6">
+      <h1>property binding</h1>
+      <br />
+      <p>Es el mecanismo de angular para definir o enlazar propiedades del htlm
+        desde uestro codigo logico (ts)</p>
+    </div>
+    <div class="col-6">
+      <h6>ejemplo</h6>
+      <ul>
+        <li>
+          <input type="text" [disabled]="unaVariablePropearty" />
+        </li>
+        <li><img [src]="unaImagen" [style.width.px]="100" /></li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h1>Event binding</h1>
+      <br />
+      <p> Es el mecanismo de angular para sirve para suscribirse a los eventos
+        realizados en el html y cominicarlos al ts con los simbolos "(" y ")"</p>
+    </div>
+    <div class="col-6">
+      <h6>ejemplo</h6>
+      <ul>
+        <li>
+          <button class="btn btn-primary" (click)="saludar()">un boton para un event</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h1>Tow-way binding</h1>
+      <br />
+      <p></p>
+      Es el mecanismo de angular para sirve para comunicarnos de manera bidimensional
+      del ts al htlm e inversamente
+    </div>
+    <div class="col-6">
+      <h6>ejemplo</h6>
+      <ul>
+        <li>
+         <input type="text" [(ngModel)]="unaVariableTow_Way" name="unaVariableTow_Way">
+        </li>
+        <li>{{unaVariableTow_Way}}</li>
+      </ul>
+    </div>
+  </div>
 </div>

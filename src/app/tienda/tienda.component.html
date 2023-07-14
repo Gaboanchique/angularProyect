@@ -1,0 +1,8 @@
+<app-navbar (seleccionarPagina)="escogerPagina($event)">
+    <div [ngSwitch]="ruta">
+        <app-inicio *ngSwtichCase="'inicio'"></app-inicio>
+        <app-contactanos *ngSwtichCase="'contactanos'"></app-contactanos>
+        <app-catalogo *ngSwtichCase="'catalogo'"></app-catalogo>
+        <app-nosotros *ngSwtichCase="'nosotros'"></app-nosotros>
+    </div>
+</app-navbar>
