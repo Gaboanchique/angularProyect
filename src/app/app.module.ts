@@ -14,6 +14,9 @@ import { InicioComponent } from './tienda/inicio/inicio.component';
 import { CatalogoComponent } from './tienda/catalogo/catalogo.component';
 import { ContactanosComponent } from './tienda/contactanos/contactanos.component';
 import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
+import { FooterComponent } from './tienda/footer/footer.component';
+import { AppRoutingModule } from './app-routing';
+import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,15 @@ import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
     InicioComponent,
     CatalogoComponent,
     ContactanosComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    FooterComponent,
+    NoEncontradoComponent
   ],
   imports: [
     BrowserModule, 
-    FormsModule
+    FormsModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

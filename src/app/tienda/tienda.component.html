@@ -1,7 +1,21 @@
-<app-navbar (seleccionarPagina)="escogerPaginax($event)"></app-navbar>
-<div [ngSwitch]="ruta">
-    <app-inicio *ngSwitchCase="'inicio'"></app-inicio>
-    <app-catalogo *ngSwitchCase="'catalogo'"></app-catalogo>
-    <app-nosotros *ngSwitchCase="'nosotros'"></app-nosotros>
-    <app-contactanos *ngSwitchCase="'contactanos'"></app-contactanos>
-</div>
+<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+    <div class="container text-light">
+        <div class="w-100 d-flex justify-content-between">
+            <div>
+                <i class="bi bi-envelope-at-fill"></i>
+                <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                <i class="bi bi-telephone-fill"></i>
+                <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+            </div>
+            <div>
+                <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="bi bi-facebook"></i></a>
+                <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="text-light" href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
