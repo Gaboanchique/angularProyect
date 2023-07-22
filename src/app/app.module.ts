@@ -17,6 +17,8 @@ import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
 import { FooterComponent } from './tienda/footer/footer.component';
 import { AppRoutingModule } from './app-routing';
 import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductoComponent } from './tienda/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +35,14 @@ import { NoEncontradoComponent } from './no-encontrado/no-encontrado.component';
     ContactanosComponent,
     NosotrosComponent,
     FooterComponent,
-    NoEncontradoComponent
+    NoEncontradoComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule, 
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
 
   ],
   providers: [],

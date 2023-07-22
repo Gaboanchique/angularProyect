@@ -7,6 +7,7 @@ import { InicioComponent } from './tienda/inicio/inicio.component';
 import { CatalogoComponent } from './tienda/catalogo/catalogo.component';
 import { NosotrosComponent } from './tienda/nosotros/nosotros.component';
 import { ContactanosComponent } from './tienda/contactanos/contactanos.component';
+import { ProductoComponent } from './tienda/producto/producto.component';
 
 const routes: Routes = [
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'clase' , component: ClasesComponent},
   {path: '', redirectTo: 'tienda', pathMatch: 'full'},
   {path: 'tienda', component: TiendaComponent, children:[
+    {path:'producto', component: ProductoComponent},
     {path:'inicio', component: InicioComponent},
     {path:'catalogo', component: CatalogoComponent},
     {path:'nosotros', component: NosotrosComponent},

@@ -14,7 +14,7 @@
         <ul class="nav navbar-nav d-flex mx-lg-auto">
           <li class="nav-item">
           <li *ngFor="let elemento of menu" class="nav-item">
-            <a [routerLink]="elemento.ruta" class="nav-link" [ngClass]="{'active': elemento.active}">{{elemento.nombre}}</a>
+            <a [routerLink]="elemento.ruta" [routerLinkActive]="'active'"  class="nav-link" >{{elemento.nombre}}</a>
           </li>
         </ul>
       </div>

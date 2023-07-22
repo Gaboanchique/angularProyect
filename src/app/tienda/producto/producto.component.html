@@ -1,0 +1,39 @@
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Registrar Producto</h3>
+                        <div class="col-md-12">
+                            <label for="titulo" class="form-label">Titulo</label>
+                           <input class="form-control" type="text" id="titulo" [(ngModel)]="producto.title" name="titulo" placeholder="Inserte un titulo" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="precio" class="form-label">Precio</label>
+                           <input class="form-control" type="number" id="precio" [(ngModel)]="producto.price" name="precio" placeholder="$0000" required>
+                        </div>
+                       <div class="col-md-12">
+                        <label for="descripcion" class="form-label">Descripcion</label>
+                        <input class="form-control" type="text" id="descripcion" [(ngModel)]="producto.description" name="descripcion" placeholder="Inserte una descricion" required>
+                       </div>
+                       <div class="col-md-12">
+                        <label for="titulo" class="form-label">Categoria</label>
+                        <select class="form-select mt-3" id="categoria" [(ngModel)]="producto.category" name="categoria" required>
+                            <option selected disabled value="Deportes">Deportes</option>
+                            <option value="carros">carros</option>
+                            <option value="Infantil">Infantil</option>
+                            <option value="Televisores">Televisores</option>
+                        </select>
+                       </div>
+                       <div class="col-md-12">
+                        <label for="precio" class="form-label">Imagen</label>
+                       <input class="form-control" type="text" id="imagen" [(ngModel)]="producto.image" name="imagen" placeholder="inserte una url" required>
+                    </div>
+                        <div class="form-button mt-3">
+                            <button id="guardar" (click)="guardar()" class="btn btn-primary">Register</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
